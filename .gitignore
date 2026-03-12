@@ -1,0 +1,29 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+staticfiles/
+media/
+
+# Node
+frontend/node_modules/
+frontend/.vite/
+
+# Build output
+templates/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
