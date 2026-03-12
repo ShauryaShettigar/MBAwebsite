@@ -13,6 +13,7 @@ frontend/.vite/
 
 # Build output
 templates/
+frontend/dist/
 
 # IDE
 .vscode/

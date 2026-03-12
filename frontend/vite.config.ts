@@ -23,7 +23,6 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../templates',
-    assetsDir: 'static',
+    outDir: 'dist',
   },
 })
