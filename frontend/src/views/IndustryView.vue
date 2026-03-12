@@ -29,14 +29,14 @@ const participationCategories = [
 ]
 
 const leaders = [
-  { name: 'Rajesh Mehta', title: 'Managing Director', company: 'Goldman Sachs India', initials: 'RM', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/goldmansachs.com', quote: 'Aureum is building what the industry has needed for decades.' },
-  { name: 'Priya Sharma', title: 'Chief Investment Officer', company: 'HDFC AMC', initials: 'PS', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/hdfcfund.com', quote: 'The practitioner-first model produces genuinely prepared professionals.' },
-  { name: 'Vikram Iyer', title: 'Chief Executive Officer', company: 'Axis Capital', initials: 'VI', color: 'bg-charcoal', logo: 'https://logo.clearbit.com/axisbank.com', quote: 'I teach here because the students match the intensity of my teams.' },
-  { name: 'Ananya Desai', title: 'Partner', company: 'McKinsey & Company', initials: 'AD', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/mckinsey.com', quote: 'The case pod format mirrors how real advisory engagements work.' },
-  { name: 'Sanjay Nair', title: 'Head of Investment Banking', company: 'JP Morgan India', initials: 'SN', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/jpmorgan.com', quote: 'Aureum graduates arrive with institutional-grade analytical rigor.' },
-  { name: 'Meera Krishnan', title: 'Chief Financial Officer', company: 'Bajaj Finserv', initials: 'MK', color: 'bg-charcoal', logo: 'https://logo.clearbit.com/bajajfinserv.in', quote: 'This is the closest thing to on-the-job training outside of a desk.' },
-  { name: 'Arjun Reddy', title: 'Managing Director', company: 'Kotak Investment Banking', initials: 'AR', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/kotak.com', quote: 'The capstone projects have directly informed our strategic thinking.' },
-  { name: 'Kavita Patel', title: 'Vice President', company: 'ICICI Securities', initials: 'KP', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/icicisecurities.com', quote: 'Mentoring Aureum students is among the most rewarding work I do.' },
+  { name: 'Rajesh Mehta', title: 'Managing Director', company: 'Goldman Sachs India', initials: 'RM', color: 'bg-gold-dark', logo: '/logos/goldman-sachs.svg', quote: 'Aureum is building what the industry has needed for decades.' },
+  { name: 'Priya Sharma', title: 'Chief Investment Officer', company: 'HDFC AMC', initials: 'PS', color: 'bg-navy-light', logo: '/logos/hdfc-amc.svg', quote: 'The practitioner-first model produces genuinely prepared professionals.' },
+  { name: 'Vikram Iyer', title: 'Chief Executive Officer', company: 'Axis Capital', initials: 'VI', color: 'bg-charcoal', logo: '/logos/axis-bank.svg', quote: 'I teach here because the students match the intensity of my teams.' },
+  { name: 'Ananya Desai', title: 'Partner', company: 'McKinsey & Company', initials: 'AD', color: 'bg-gold-dark', logo: '/logos/mckinsey.svg', quote: 'The case pod format mirrors how real advisory engagements work.' },
+  { name: 'Sanjay Nair', title: 'Head of Investment Banking', company: 'JP Morgan India', initials: 'SN', color: 'bg-navy-light', logo: '/logos/jpmorgan.svg', quote: 'Aureum graduates arrive with institutional-grade analytical rigor.' },
+  { name: 'Meera Krishnan', title: 'Chief Financial Officer', company: 'Bajaj Finserv', initials: 'MK', color: 'bg-charcoal', logo: '/logos/bajaj-finserv.svg', quote: 'This is the closest thing to on-the-job training outside of a desk.' },
+  { name: 'Arjun Reddy', title: 'Managing Director', company: 'Kotak Investment Banking', initials: 'AR', color: 'bg-gold-dark', logo: '/logos/kotak.svg', quote: 'The capstone projects have directly informed our strategic thinking.' },
+  { name: 'Kavita Patel', title: 'Vice President', company: 'ICICI Securities', initials: 'KP', color: 'bg-navy-light', logo: '/logos/icici-securities.svg', quote: 'Mentoring Aureum students is among the most rewarding work I do.' },
 ]
 
 const projectTypes = [

@@ -62,18 +62,18 @@ const roles = [
 ]
 
 const employers = [
-  { name: 'Goldman Sachs', category: 'Global Bank', logo: 'https://logo.clearbit.com/goldmansachs.com' },
-  { name: 'JP Morgan', category: 'Global Bank', logo: 'https://logo.clearbit.com/jpmorgan.com' },
-  { name: 'HDFC Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/hdfcbank.com' },
-  { name: 'ICICI Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/icicibank.com' },
-  { name: 'Kotak Mahindra', category: 'Private Bank', logo: 'https://logo.clearbit.com/kotak.com' },
-  { name: 'Axis Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/axisbank.com' },
-  { name: 'Bajaj Finserv', category: 'Financial Services', logo: 'https://logo.clearbit.com/bajajfinserv.in' },
-  { name: 'Edelweiss', category: 'Wealth Management', logo: 'https://logo.clearbit.com/edelweissfin.com' },
-  { name: 'Avendus', category: 'Investment Bank', logo: 'https://logo.clearbit.com/avendus.com' },
-  { name: 'PhonePe', category: 'Fintech', logo: 'https://logo.clearbit.com/phonepe.com' },
-  { name: 'CRED', category: 'Fintech', logo: 'https://logo.clearbit.com/cred.club' },
-  { name: 'Razorpay', category: 'Fintech', logo: 'https://logo.clearbit.com/razorpay.com' },
+  { name: 'Goldman Sachs', category: 'Global Bank', logo: '/logos/goldman-sachs.svg' },
+  { name: 'JP Morgan', category: 'Global Bank', logo: '/logos/jpmorgan.svg' },
+  { name: 'HDFC Bank', category: 'Private Bank', logo: '/logos/hdfc-bank.svg' },
+  { name: 'ICICI Bank', category: 'Private Bank', logo: '/logos/icici-bank.svg' },
+  { name: 'Kotak Mahindra', category: 'Private Bank', logo: '/logos/kotak.svg' },
+  { name: 'Axis Bank', category: 'Private Bank', logo: '/logos/axis-bank.svg' },
+  { name: 'Bajaj Finserv', category: 'Financial Services', logo: '/logos/bajaj-finserv.svg' },
+  { name: 'Edelweiss', category: 'Wealth Management', logo: '/logos/edelweiss.svg' },
+  { name: 'Avendus', category: 'Investment Bank', logo: '/logos/avendus.svg' },
+  { name: 'PhonePe', category: 'Fintech', logo: '/logos/phonepe.svg' },
+  { name: 'CRED', category: 'Fintech', logo: '/logos/cred.svg' },
+  { name: 'Razorpay', category: 'Fintech', logo: '/logos/razorpay.svg' },
 ]
 
 const supportItems = [

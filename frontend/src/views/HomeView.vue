@@ -26,14 +26,14 @@ onUnmounted(() => {
 })
 
 const companies = [
-  { name: 'Goldman Sachs', logo: 'https://logo.clearbit.com/goldmansachs.com' },
-  { name: 'JP Morgan', logo: 'https://logo.clearbit.com/jpmorgan.com' },
-  { name: 'HDFC Bank', logo: 'https://logo.clearbit.com/hdfcbank.com' },
-  { name: 'ICICI Bank', logo: 'https://logo.clearbit.com/icicibank.com' },
-  { name: 'Kotak Mahindra', logo: 'https://logo.clearbit.com/kotak.com' },
-  { name: 'Axis Bank', logo: 'https://logo.clearbit.com/axisbank.com' },
-  { name: 'Aditya Birla', logo: 'https://logo.clearbit.com/adityabirlacapital.com' },
-  { name: 'Bajaj Finserv', logo: 'https://logo.clearbit.com/bajajfinserv.in' },
+  { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.svg' },
+  { name: 'JP Morgan', logo: '/logos/jpmorgan.svg' },
+  { name: 'HDFC Bank', logo: '/logos/hdfc-bank.svg' },
+  { name: 'ICICI Bank', logo: '/logos/icici-bank.svg' },
+  { name: 'Kotak Mahindra', logo: '/logos/kotak.svg' },
+  { name: 'Axis Bank', logo: '/logos/axis-bank.svg' },
+  { name: 'Aditya Birla', logo: '/logos/aditya-birla.svg' },
+  { name: 'Bajaj Finserv', logo: '/logos/bajaj-finserv.svg' },
 ]
 
 const differentiators = [
