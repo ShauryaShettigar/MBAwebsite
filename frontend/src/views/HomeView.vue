@@ -27,13 +27,10 @@ onUnmounted(() => {
 
 const companies = [
   { name: 'Goldman Sachs', logo: '/logos/goldman-sachs.svg' },
-  { name: 'JP Morgan', logo: '/logos/jpmorgan.svg' },
+  { name: 'J.P. Morgan', logo: '/logos/jpmorgan.svg' },
   { name: 'HDFC Bank', logo: '/logos/hdfc-bank.svg' },
-  { name: 'ICICI Bank', logo: '/logos/icici-bank.svg' },
   { name: 'Kotak Mahindra', logo: '/logos/kotak.svg' },
   { name: 'Axis Bank', logo: '/logos/axis-bank.svg' },
-  { name: 'Aditya Birla', logo: '/logos/aditya-birla.svg' },
-  { name: 'Bajaj Finserv', logo: '/logos/bajaj-finserv.svg' },
 ]
 
 const differentiators = [
@@ -215,7 +212,7 @@ const problems = [
       </div>
 
       <!-- Company Logo Grid -->
-      <div class="fade-up mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy/5 bg-navy/5 sm:grid-cols-4">
+      <div class="fade-up mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy/5 bg-navy/5 sm:grid-cols-5">
         <div
           v-for="company in companies"
           :key="company.name"

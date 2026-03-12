@@ -63,17 +63,10 @@ const roles = [
 
 const employers = [
   { name: 'Goldman Sachs', category: 'Global Bank', logo: '/logos/goldman-sachs.svg' },
-  { name: 'JP Morgan', category: 'Global Bank', logo: '/logos/jpmorgan.svg' },
+  { name: 'J.P. Morgan', category: 'Global Bank', logo: '/logos/jpmorgan.svg' },
   { name: 'HDFC Bank', category: 'Private Bank', logo: '/logos/hdfc-bank.svg' },
-  { name: 'ICICI Bank', category: 'Private Bank', logo: '/logos/icici-bank.svg' },
   { name: 'Kotak Mahindra', category: 'Private Bank', logo: '/logos/kotak.svg' },
   { name: 'Axis Bank', category: 'Private Bank', logo: '/logos/axis-bank.svg' },
-  { name: 'Bajaj Finserv', category: 'Financial Services', logo: '/logos/bajaj-finserv.svg' },
-  { name: 'Edelweiss', category: 'Wealth Management', logo: '/logos/edelweiss.svg' },
-  { name: 'Avendus', category: 'Investment Bank', logo: '/logos/avendus.svg' },
-  { name: 'PhonePe', category: 'Fintech', logo: '/logos/phonepe.svg' },
-  { name: 'CRED', category: 'Fintech', logo: '/logos/cred.svg' },
-  { name: 'Razorpay', category: 'Fintech', logo: '/logos/razorpay.svg' },
 ]
 
 const supportItems = [
