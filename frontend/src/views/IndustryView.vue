@@ -29,14 +29,14 @@ const participationCategories = [
 ]
 
 const leaders = [
-  { name: 'Rajesh Mehta', title: 'Managing Director', company: 'Goldman Sachs India', initials: 'RM', color: 'bg-gold-dark', quote: 'Aureum is building what the industry has needed for decades.' },
-  { name: 'Priya Sharma', title: 'Chief Investment Officer', company: 'HDFC AMC', initials: 'PS', color: 'bg-navy-light', quote: 'The practitioner-first model produces genuinely prepared professionals.' },
-  { name: 'Vikram Iyer', title: 'Chief Executive Officer', company: 'Axis Capital', initials: 'VI', color: 'bg-charcoal', quote: 'I teach here because the students match the intensity of my teams.' },
-  { name: 'Ananya Desai', title: 'Partner', company: 'McKinsey & Company', initials: 'AD', color: 'bg-gold-dark', quote: 'The case pod format mirrors how real advisory engagements work.' },
-  { name: 'Sanjay Nair', title: 'Head of Investment Banking', company: 'JP Morgan India', initials: 'SN', color: 'bg-navy-light', quote: 'Aureum graduates arrive with institutional-grade analytical rigor.' },
-  { name: 'Meera Krishnan', title: 'Chief Financial Officer', company: 'Bajaj Finserv', initials: 'MK', color: 'bg-charcoal', quote: 'This is the closest thing to on-the-job training outside of a desk.' },
-  { name: 'Arjun Reddy', title: 'Managing Director', company: 'Kotak Investment Banking', initials: 'AR', color: 'bg-gold-dark', quote: 'The capstone projects have directly informed our strategic thinking.' },
-  { name: 'Kavita Patel', title: 'Vice President', company: 'ICICI Securities', initials: 'KP', color: 'bg-navy-light', quote: 'Mentoring Aureum students is among the most rewarding work I do.' },
+  { name: 'Rajesh Mehta', title: 'Managing Director', company: 'Goldman Sachs India', initials: 'RM', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/goldmansachs.com', quote: 'Aureum is building what the industry has needed for decades.' },
+  { name: 'Priya Sharma', title: 'Chief Investment Officer', company: 'HDFC AMC', initials: 'PS', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/hdfcfund.com', quote: 'The practitioner-first model produces genuinely prepared professionals.' },
+  { name: 'Vikram Iyer', title: 'Chief Executive Officer', company: 'Axis Capital', initials: 'VI', color: 'bg-charcoal', logo: 'https://logo.clearbit.com/axisbank.com', quote: 'I teach here because the students match the intensity of my teams.' },
+  { name: 'Ananya Desai', title: 'Partner', company: 'McKinsey & Company', initials: 'AD', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/mckinsey.com', quote: 'The case pod format mirrors how real advisory engagements work.' },
+  { name: 'Sanjay Nair', title: 'Head of Investment Banking', company: 'JP Morgan India', initials: 'SN', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/jpmorgan.com', quote: 'Aureum graduates arrive with institutional-grade analytical rigor.' },
+  { name: 'Meera Krishnan', title: 'Chief Financial Officer', company: 'Bajaj Finserv', initials: 'MK', color: 'bg-charcoal', logo: 'https://logo.clearbit.com/bajajfinserv.in', quote: 'This is the closest thing to on-the-job training outside of a desk.' },
+  { name: 'Arjun Reddy', title: 'Managing Director', company: 'Kotak Investment Banking', initials: 'AR', color: 'bg-gold-dark', logo: 'https://logo.clearbit.com/kotak.com', quote: 'The capstone projects have directly informed our strategic thinking.' },
+  { name: 'Kavita Patel', title: 'Vice President', company: 'ICICI Securities', initials: 'KP', color: 'bg-navy-light', logo: 'https://logo.clearbit.com/icicisecurities.com', quote: 'Mentoring Aureum students is among the most rewarding work I do.' },
 ]
 
 const projectTypes = [
@@ -141,12 +141,22 @@ const projectTypes = [
             :key="leader.name"
             class="group bg-off-white rounded-xl p-6 border border-charcoal/5 transition-all duration-300 hover:shadow-lg hover:shadow-gold/5 hover:border-gold/20"
           >
-            <!-- Avatar -->
-            <div
-              class="w-16 h-16 rounded-full flex items-center justify-center text-white font-display font-bold text-lg mb-5"
-              :class="leader.color"
-            >
-              {{ leader.initials }}
+            <!-- Avatar & Company Logo -->
+            <div class="flex items-center gap-3 mb-5">
+              <div
+                class="w-14 h-14 rounded-full flex items-center justify-center text-white font-display font-bold text-lg shrink-0"
+                :class="leader.color"
+              >
+                {{ leader.initials }}
+              </div>
+              <div class="w-10 h-10 rounded-lg bg-white border border-charcoal/10 flex items-center justify-center p-1.5 shrink-0">
+                <img
+                  :src="leader.logo"
+                  :alt="leader.company + ' logo'"
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </div>
             </div>
             <h3 class="font-display text-lg text-charcoal font-bold leading-snug">
               {{ leader.name }}

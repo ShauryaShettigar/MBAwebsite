@@ -62,18 +62,18 @@ const roles = [
 ]
 
 const employers = [
-  { name: 'Goldman Sachs', category: 'Global Bank' },
-  { name: 'JP Morgan', category: 'Global Bank' },
-  { name: 'HDFC Bank', category: 'Private Bank' },
-  { name: 'ICICI Bank', category: 'Private Bank' },
-  { name: 'Kotak Mahindra', category: 'Private Bank' },
-  { name: 'Axis Bank', category: 'Private Bank' },
-  { name: 'Bajaj Finserv', category: 'Financial Services' },
-  { name: 'Edelweiss', category: 'Wealth Management' },
-  { name: 'Avendus', category: 'Investment Bank' },
-  { name: 'PhonePe', category: 'Fintech' },
-  { name: 'CRED', category: 'Fintech' },
-  { name: 'Razorpay', category: 'Fintech' },
+  { name: 'Goldman Sachs', category: 'Global Bank', logo: 'https://logo.clearbit.com/goldmansachs.com' },
+  { name: 'JP Morgan', category: 'Global Bank', logo: 'https://logo.clearbit.com/jpmorgan.com' },
+  { name: 'HDFC Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/hdfcbank.com' },
+  { name: 'ICICI Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/icicibank.com' },
+  { name: 'Kotak Mahindra', category: 'Private Bank', logo: 'https://logo.clearbit.com/kotak.com' },
+  { name: 'Axis Bank', category: 'Private Bank', logo: 'https://logo.clearbit.com/axisbank.com' },
+  { name: 'Bajaj Finserv', category: 'Financial Services', logo: 'https://logo.clearbit.com/bajajfinserv.in' },
+  { name: 'Edelweiss', category: 'Wealth Management', logo: 'https://logo.clearbit.com/edelweissfin.com' },
+  { name: 'Avendus', category: 'Investment Bank', logo: 'https://logo.clearbit.com/avendus.com' },
+  { name: 'PhonePe', category: 'Fintech', logo: 'https://logo.clearbit.com/phonepe.com' },
+  { name: 'CRED', category: 'Fintech', logo: 'https://logo.clearbit.com/cred.club' },
+  { name: 'Razorpay', category: 'Fintech', logo: 'https://logo.clearbit.com/razorpay.com' },
 ]
 
 const supportItems = [
@@ -272,13 +272,14 @@ const supportItems = [
             class="bg-white/5 border border-white/10 rounded-lg p-6 flex flex-col items-center justify-center text-center hover:bg-white/10 hover:border-gold/20 transition-all group"
           >
             <div
-              class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mb-3 group-hover:bg-gold/10 transition-colors"
+              class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-3 p-2 group-hover:shadow-lg transition-all"
             >
-              <span
-                class="text-white/70 font-display font-bold text-lg group-hover:text-gold transition-colors"
-              >
-                {{ employer.name.charAt(0) }}
-              </span>
+              <img
+                :src="employer.logo"
+                :alt="employer.name + ' logo'"
+                class="w-10 h-10 object-contain"
+                loading="lazy"
+              />
             </div>
             <span class="text-white font-medium text-sm">{{
               employer.name

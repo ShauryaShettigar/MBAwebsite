@@ -26,14 +26,14 @@ onUnmounted(() => {
 })
 
 const companies = [
-  'Goldman Sachs',
-  'JP Morgan',
-  'HDFC',
-  'ICICI',
-  'Kotak',
-  'Axis',
-  'Aditya Birla',
-  'Bajaj Finserv',
+  { name: 'Goldman Sachs', logo: 'https://logo.clearbit.com/goldmansachs.com' },
+  { name: 'JP Morgan', logo: 'https://logo.clearbit.com/jpmorgan.com' },
+  { name: 'HDFC Bank', logo: 'https://logo.clearbit.com/hdfcbank.com' },
+  { name: 'ICICI Bank', logo: 'https://logo.clearbit.com/icicibank.com' },
+  { name: 'Kotak Mahindra', logo: 'https://logo.clearbit.com/kotak.com' },
+  { name: 'Axis Bank', logo: 'https://logo.clearbit.com/axisbank.com' },
+  { name: 'Aditya Birla', logo: 'https://logo.clearbit.com/adityabirlacapital.com' },
+  { name: 'Bajaj Finserv', logo: 'https://logo.clearbit.com/bajajfinserv.in' },
 ]
 
 const differentiators = [
@@ -218,12 +218,15 @@ const problems = [
       <div class="fade-up mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-navy/5 bg-navy/5 sm:grid-cols-4">
         <div
           v-for="company in companies"
-          :key="company"
+          :key="company.name"
           class="flex h-24 items-center justify-center bg-white px-6 transition-colors duration-300 hover:bg-off-white sm:h-28"
         >
-          <span class="text-sm font-semibold tracking-wide text-navy/30 sm:text-base">
-            {{ company }}
-          </span>
+          <img
+            :src="company.logo"
+            :alt="company.name + ' logo'"
+            class="h-8 max-w-[120px] object-contain opacity-40 grayscale transition-all duration-300 hover:opacity-80 hover:grayscale-0 sm:h-10"
+            loading="lazy"
+          />
         </div>
       </div>
 
